@@ -1,1 +1,1 @@
-# my-pseudocode.io
+# Learning how to pseudocode. 
