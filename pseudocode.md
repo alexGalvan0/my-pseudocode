@@ -1,54 +1,41 @@
-# How to brew a cup of coffee
+# HOW TO MAKE A CUP OF COFFEE
 
-**START PROGRAM**<br>
+### INIT OBJECTS:
+> - **CREATE** CoffeeMaker
+> - **CREATE** Person
+> - **CREATE** K-Cups
+> - **CREATE** K-CupContainer
+> - **CREATE** Mug
+> - **CREATE** MugCabinete
+> - **CREATE** Sink
 
->*INIT()* <br>
-Person.selectsCoffee("Donut shop")<br>
-Machine.AddCoffee("Donut Shop")
+### PROPERTIES OF OBJECTS:
+> - CoffeeMaker
+>   - Has K-Cup insert
+>   - Has water reservoir
+>   - Has Temp Sensor
+>   - Has coffee dispenser
+>   - Has water heater
+>   - Has screen for controlls
 
->Person.selectSize(10)<br>
-Machine.selectionMade(10)
+> - Person:
+>   - Has 2 hands
+>   - Has eyes
 
->*IF* (slecetedCoffee >= 1)
-Person.addCoffeeIntoMachine(SelectedCoffee)
+> - K-Cups:
+>   - small circular
+>   - Fits into K-Cup insert inside *Coffee Maker*
 
->*IF* (Machine.hasEnoughWater **AND** has coffee inside)
-> - Machine.makeCoffee(selectedCoffee)
+> - Mug:
+>   - Goes under coffee dispenser
+>   - Holds up to 1.5 cups of coffee
+>   - Has handle to pickup and place down by *Person* hands
 
-**END PROGRAM**
+> - K-CupContainer:
+>   - can hold 0 to 10 *K-Cups*
 
-<hr>
-
-### Define Objects, functions and person
-
-<u>**Person:**</u>
-
-
-<u>INIT FUNCTION</u><br>
-- **CREATE** coffeeMachine (Keiurig)<br>
-- **CREATE** coffeeMachineController<br>
-- **CREATE** coffeeeWaterContainer<br>
-- **CREATE** controlPanel<br>
--**CREATE** kCupContainer<br>
-- **CREATE** Person
-
-coffeeMachine
-> **INIT**
-
-coffeeMachineController
-> **INIT**
-
-coffeeeWaterContainer
-> **INIT**
-
-controlPanel
-> **INIT**
-
-kCupContainer
-> **INIT**
-
-Person
-> **INIT**
+> - Sink:
+>   - Has Handle for on/off
 
 
-
+### METHODS OF OBJECTS:
