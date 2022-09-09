@@ -82,21 +82,29 @@
 FUNCTION CheckWaterLevel
 IF waterLevel >= 1 cup 
     RTURN true
+ELSE 
+    RETURN false
 
 FUNCTION CheckWaterTemp
 IF waterTem == 195
     RETURN true
+ELSE 
+    RETURN false
 
 Function iskCupInserted
 IF K-Cup IN CoffeMaker
     RETURN true
+ELSE 
+    RETURN false
 
 FUNCTION isMugUnderDispensor
 IF Mug unser dispensor
     RETURN true
+ELSE 
+    RETURN false
 
-FUNCTION BREW COFFEE
-IF [CheckWaterLevel,CheckWaterTemp,iskCupInserted,isMugUnderDispensor] == true
+FUNCTION BrewCoffee
+IF [CheckWaterLevel,CheckWaterTemp,iskCupInserted,isMugUnderDispensor] = true
     BrewCoffee
 ```
 ### <u>LOGIC:</u>
@@ -109,16 +117,19 @@ A.IF CheckWaterLevel = false
     Fill water reservoir untill full.
     Replace reservoir into CoffeeMaker
     RETURN true
+    BrewCoffee
 
 B. IF CheckWaterTemp = false
     Use CoffeeMaker water heater untill water temp is = 195
     RETURN true
+    BrewCoffee
 
 C. IF iskCupInserted = false
     Person check to K-Cup container,
         IF K-Cup container has >= 1 K-Cup
             Person one hand grab K-Cup and insert into CoffeeMachine K-Cup insert
             RETURN true
+            BrewCoffee
         ELSE K-Cup container = 0
             END PROGRAM
 
@@ -127,5 +138,6 @@ D. IF isMugUnderDispensor = false
         IF MugCabinet >=1 mug
             Place Mug under CoffeeMaker Dispensor
                 RETURN true
+                BrewCoffee
         ElSE
             END PROGRAM
