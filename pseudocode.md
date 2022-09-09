@@ -1,5 +1,6 @@
 # HOW TO MAKE A CUP OF COFFEE
 
+### <u>START</u>
 ### <u>INIT OBJECTS:</u>
 > - **CREATE** CoffeeMaker
 > - **CREATE** Person
@@ -75,4 +76,56 @@
 
 
 
+### <u>FUNCTIONS:</u>
+
+```
+FUNCTION CheckWaterLevel
+IF waterLevel >= 1 cup 
+    RTURN true
+
+FUNCTION CheckWaterTemp
+IF waterTem == 195
+    RETURN true
+
+Function iskCupInserted
+IF K-Cup IN CoffeMaker
+    RETURN true
+
+FUNCTION isMugUnderDispensor
+IF Mug unser dispensor
+    RETURN true
+
+FUNCTION BREW COFFEE
+IF [CheckWaterLevel,CheckWaterTemp,iskCupInserted,isMugUnderDispensor] == true
+    BrewCoffee
+```
 ### <u>LOGIC:</u>
+```
+
+ELSE
+A.IF CheckWaterLevel = false
+    Person detach water reservoir from CoffeeMaker with one hand,
+    Turn on sink with other,
+    Fill water reservoir untill full.
+    Replace reservoir into CoffeeMaker
+    RETURN true
+
+B. IF CheckWaterTemp = false
+    Use CoffeeMaker water heater untill water temp is = 195
+    RETURN true
+
+C. IF iskCupInserted = false
+    Person check to K-Cup container,
+        IF K-Cup container has >= 1 K-Cup
+            Person one hand grab K-Cup and insert into CoffeeMachine K-Cup insert
+            RETURN true
+        ELSE K-Cup container = 0
+            END PROGRAM
+
+D. IF isMugUnderDispensor = false
+    Person open MugCabinet
+        IF MugCabinet >=1 mug
+            Place Mug under CoffeeMaker Dispensor
+                RETURN true
+        ElSE
+            END PROGRAM
