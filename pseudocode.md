@@ -1,4 +1,4 @@
-# How to brew a cup of coffee
+# HOW TO BREW A CUP OF COFFEE
 
 **START PROGRAM**<br>
 
@@ -19,9 +19,9 @@ Person.addCoffeeIntoMachine(SelectedCoffee)
 
 <hr>
 
-### Define Objects, functions and person
+### Define Objects and functions
 
-<u>**Person:**</u>
+**Person:**
 
 
 <u>INIT FUNCTION</u><br>
@@ -32,8 +32,10 @@ Person.addCoffeeIntoMachine(SelectedCoffee)
 -**CREATE** kCupContainer<br>
 - **CREATE** Person
 
-coffeeMachine
-> **INIT**
+**INIT** coffeeMachine
+> - Machine used to make coffee.<br>
+> **PROPERTIES:**
+> * 
 
 coffeeMachineController
 > **INIT**
